@@ -1,4 +1,21 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>Vue学习</title>
+        <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    </head>
+    <body>
+        <div id="vue_div">
+            <h1>我的h1标签：{{site}}</h1>
+        </div>
+        <script type="text/javascript">
+          var vm = new Vue({
+              el:'#vue_div',
+              data:{
+                  site:'第一天学习'
+              }
+          });
+        </script>
+    </body>
 </html>
